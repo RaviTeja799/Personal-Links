@@ -1,20 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Links</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-white shadow p-4">
-        <h1 class="text-2xl font-bold text-center">My Personal Links</h1>
+
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <h1
+                class="text-3xl md:text-4xl font-bold text-center bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                My Bookmarks</h1>
+            <p class="text-center text-gray-600 mt-2 text-sm md:text-base">Quick access to my favorite sites</p>
+        </div>
     </header>
-    <main class="p-4 flex flex-col space-y-4">
-        <a href="https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z-in-450-days/" class="bg-white p-4 rounded shadow hover:bg-gray-50 text-center">
-            <img src="/src/images/tuf.png" alt="Striver's A2Z DSA Sheet" class="mx-auto mb-2 w-24 h-24 object-contain">
-            <h2 class="text-xl font-semibold">Striver's A2Z DSA Sheet</h2>
-        </a>
+
+    <!-- Main Grid -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Responsive Grid: 1 col mobile, 2 cols tablet, 3-4 cols desktop -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+            <!-- Bookmark Card 1 - Existing -->
+            <a href="https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z-in-450-days/"
+                class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col items-center group">
+                <div class="w-20 h-20 mb-4 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                    <img src="/src/images/tuf.png" alt="Striver's A2Z DSA Sheet" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg font-semibold text-center text-gray-800 group-hover:text-blue-600 transition-colors">
+                    Striver's A2Z DSA Sheet</h2>
+                <p class="text-xs text-gray-500 mt-2">takeuforward.org</p>
+            </a>
+            <a href="https://www.codechef.com/practice"
+                class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col items-center group">
+                <div class="w-20 h-20 mb-4 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                    <img src="/src/images/codechefs.png" alt="CodeChefs Practice" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg font-semibold text-center text-gray-800 group-hover:text-blue-600 transition-colors">
+                    CodeChefs Practice</h2>
+                <p class="text-xs text-gray-500 mt-2">codechef.com</p>
+            </a>
+            <a href="https://www.hackerrank.com/domains/algorithms?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=problem-solving"
+                class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col items-center group">
+                <div class="w-20 h-20 mb-4 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                    <img src="/src/images/hackerrank.png" alt="Hackerrank" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg font-semibold text-center text-gray-800 group-hover:text-blue-600 transition-colors">
+                    Hackerrank Problem Solving</h2>
+                <p class="text-xs text-gray-500 mt-2">hackerrank.com</p>
+            </a>
+            <a href="YOUR_URL_HERE"
+                class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col items-center group">
+                <div class="w-20 h-20 mb-4 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                    <img src="/src/images/YOUR_IMAGE.png" alt="Site Name" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg font-semibold text-center text-gray-800 group-hover:text-blue-600 transition-colors">
+                    Site Name</h2>
+                <p class="text-xs text-gray-500 mt-2">domain.com</p>
+            </a>
+            <a href="YOUR_URL_HERE"
+                class="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col items-center group">
+                <div class="w-20 h-20 mb-4 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                    <img src="/src/images/YOUR_IMAGE.png" alt="Site Name" class="w-full h-full object-contain">
+                </div>
+                <h2 class="text-lg font-semibold text-center text-gray-800 group-hover:text-blue-600 transition-colors">
+                    Site Name</h2>
+                <p class="text-xs text-gray-500 mt-2">domain.com</p>
+            </a>
+        </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 py-6 text-center text-gray-500 text-sm">
+        <p>Your Personal Bookmarks Collection</p>
+    </footer>
 </body>
+
 </html>
